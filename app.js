@@ -81,3 +81,9 @@ const renderTotalCarrito = () => {
     contadorPrecioTotal.innerText = total
 }
 
+
+let usuarioIngresado = prompt("Ingresa tu email para recibir mas info");
+localStorage.setItem("usuario-ingresado", usuarioIngresado);
+
+let usuarioIngresadoEnLocalStorage = localStorage.getItem("usuario-ingresado");
+console.log(usuarioIngresadoEnLocalStorage);
